@@ -1,9 +1,9 @@
 #!/bin/bash
 
-choice="$(zenity --width=380 --height=250 --list --column "Choix" --checklist --title="AppImages" --text " Choisissez des logiciels portables à télécharger!" \
+choice="$(zenity --width=380 --height=270 --list --column "Choix" --checklist --title="AppImages" --text " Choisissez des logiciels portables à télécharger!" \
     --column="Noms" --column="Descriptions"\
     FALSE Joplin "Prise de note Webdav PC/Android"\
-    FALSE Molotov TV "Chaines TV"\    
+    FALSE MolotovTV "Chaines TV"\
     FALSE Odio "Lecteur Webradio"\
     FALSE Lahda "Lecteur MP3"\
     FALSE MellowPlayer "Lecteur Deezer Spotify..."\
@@ -24,7 +24,7 @@ case "${choice}" in
 esac
 
 case "${choice}" in
-    *"Molotov TV"* )
+    *"MolotovTV"* )
     echo "# Téléchargements de Molotov TV"
     wget http://desktop-auto-upgrade.molotov.tv/linux/4.2.2/molotov.AppImage
     echo "10"
