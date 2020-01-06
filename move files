@@ -1,0 +1,2 @@
+mkdir -p ~/Applications/
+mv ~/Downloads/*.AppImage ~/Applications/
