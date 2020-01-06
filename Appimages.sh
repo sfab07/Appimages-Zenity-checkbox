@@ -3,6 +3,7 @@
 choice="$(zenity --width=380 --height=250 --list --column "Choix" --checklist --title="AppImages" --text " Choisissez des logiciels portables à télécharger!" \
     --column="Noms" --column="Descriptions"\
     FALSE Joplin "Prise de note Webdav PC/Android"\
+    FALSE Molotov TV "Chaines"\    
     FALSE Odio "Lecteur Webradio"\
     FALSE Lahda "Lecteur MP3"\
     FALSE MellowPlayer "Lecteur Deezer Spotify..."\
@@ -18,6 +19,14 @@ case "${choice}" in
     *"Joplin"* )
     echo "# Téléchargements de Joplin"
     wget https://github.com/laurent22/joplin/releases/download/v1.0.175/Joplin-1.0.175-x86_64.AppImage
+    echo "10"
+    ;;
+esac
+
+case "${choice}" in
+    *"Molotov TV"* )
+    echo "# Téléchargements de Molotov TV"
+    wget http://desktop-auto-upgrade.molotov.tv/linux/4.2.2/molotov.AppImage
     echo "10"
     ;;
 esac
