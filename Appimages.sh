@@ -3,7 +3,7 @@
 choice="$(zenity --width=380 --height=250 --list --column "Choix" --checklist --title="AppImages" --text " Choisissez des logiciels portables à télécharger!" \
     --column="Noms" --column="Descriptions"\
     FALSE Joplin "Prise de note Webdav PC/Android"\
-    FALSE Molotov TV "Chaines"\    
+    FALSE Molotov TV "Chaines TV"\    
     FALSE Odio "Lecteur Webradio"\
     FALSE Lahda "Lecteur MP3"\
     FALSE MellowPlayer "Lecteur Deezer Spotify..."\
